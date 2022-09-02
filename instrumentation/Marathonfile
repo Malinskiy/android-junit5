@@ -1,0 +1,17 @@
+name: "junit5 tests"
+outputDir: "build/reports/marathon"
+vendorConfiguration:
+  type: "Android"
+  applicationApk: "sample/build/outputs/apk/debug/sample-debug.apk"
+  testApplicationApk: "sample/build/outputs/apk/androidTest/debug/sample-debug-androidTest.apk"
+  installOptions: "-t"
+  instrumentationArgs:
+    runnerBuilder: "de.mannodermaus.junit5.AndroidJUnit5Builder"
+  testParserConfiguration:
+    type: "remote"
+    instrumentationArgs:
+      listener: "com.malinskiy.adam.junit4.android.listener.TestAnnotationProducer"
+      runnerBuilder: "de.mannodermaus.junit5.AndroidJUnit5Builder"
+testClassRegexes:
+  - ".+"  
+debug: true

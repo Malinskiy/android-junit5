@@ -57,6 +57,8 @@ object libs {
     const val androidXTestRunner = "androidx.test:runner:${versions.androidXTest}"
     const val androidXTestMonitor = "androidx.test:monitor:${versions.androidXTest}"
     const val espressoCore = "androidx.test.espresso:espresso-core:3.4.0"
+    
+    const val testAnnotationProducer = "com.malinskiy.adam:android-junit4-test-annotation-producer:0.4.5"
 
     const val composeUiTest = "androidx.compose.ui:ui-test:${versions.compose}"
     const val composeUiTestJUnit4 = "androidx.compose.ui:ui-test-junit4:${versions.compose}"

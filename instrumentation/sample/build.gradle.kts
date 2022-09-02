@@ -96,6 +96,7 @@ dependencies {
   androidTestImplementation(libs.junitJupiterApi)
   androidTestImplementation(libs.junitJupiterParams)
   androidTestImplementation(libs.espressoCore)
+  androidTestImplementation(libs.testAnnotationProducer)
   androidTestImplementation(project(":core"))
   androidTestRuntimeOnly(project(":runner"))
 }
